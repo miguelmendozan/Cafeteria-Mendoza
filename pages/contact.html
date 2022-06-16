@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width-device-width,initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="../assets/icons8-cafe-100.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+<body class="gridContact">
+<!--Inicio del encabezado-->
+<header class="grid__header">
+    <!--Logo de la pagina-->
+       <div class="grid__header">
+           <img src="../assets/favpng_coffee-cup-latte-cafe-watercolor-painting.png" alt="logo taza de cafe" title="Logo taza de cafe" width="100px" height="100px" />
+           <h1 class="logo">Mendoza Coffee Shop</h1>
+       </div>          
+ <!--Fin del logo de la pagina-->
+ <!--Barra de navegacion-->     
+    <nav>
+      <!--Enlaces barra de navegacion-->       
+        <ul>
+            <li><a href="./../index.html">Inicio</a></li>
+            <li><a href="./about.html">Sobre nosotros</a></li>
+            <li><a href="./gallery.html">Galeria</a></li>
+            <li><a class="active" href="./contact.html">Contacto</a></li>
+            <li><a href="./services.html">Servicios</a></li>
+        </ul>
+ <!--Fin de los enlaces de la barra de navegacion-->       
+    </nav>
+ <!-- Fin de la barra de la navegacion-->    
+</header>
+<!-- Fin del encabezado-->
+<section>
+    <!--Inicio formulario de contacto-->
+    <form class="form">
+        <label class="form__label" for="nombre">Nombre</label>
+        <input class="form__text" type="text" id="nombre" />
+        <hr /> 
+        <label class="form__label" for="apellido">Apellido</label>
+        <input class="form__text" type="text" id="apellido" />
+        <hr />
+        <label class="form__label" for="e-mail">E-mail</label>
+        <input class="form__text" type="email" id="e-mail" />
+        <hr />
+        <label class="form__label">¿Es consumidor habitual del Cafe?</label>
+        <br />
+        <span class="form__label">Si</span>
+        <input type="radio" name="option" value="Si" />
+        <span class="form__label">No</span>
+        <input type="radio" name="option" value="" />
+        <hr />
+        <span class="form__label">Género</span>
+        <br />
+        <select>
+            <option>Masculino</option>
+            <option>Femenino</option>
+            <option>Otro/a</option>
+        </select>
+        <hr />
+        <label class="form__label">¿Desea recibir info sobre nuestras promociones?</label>
+        <input type="checkbox" name="aceptar" />
+        <hr />
+        <label class="form__label" for="comentarios">Deseamos saber tu opinion ¿Quieres dejar algun comentario?</label>
+        <br />
+        <textarea id="comentarios" rows="10" cols="50"></textarea>
+        <br />
+        <input class="form__btn" type="submit" value="Enviar formulario" />
+        <input class="form__btn" type="reset" value="Limpiar formulario" />   
+    </form>
+    <!--Fin del formulario de contacto--> 
+</section>
+<!--Inicio del footer-->
+<footer class="grid__footer">
+    <ul>
+        <li><a href="./contact.html">Contactenos</a></li>
+        <li><a href="https://www.facebook.com/" target="_blank">Pueden seguirnos en Facebook!</a></li>
+    </ul>
+</footer>
+<!--Fin del footer-->  
+</body>
+</html>

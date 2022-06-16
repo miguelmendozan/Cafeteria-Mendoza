@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-image:url(./../assets/afe4c660-f87a-4fed-9017-765648384c0c.jfif); */
+    background-color: #99adb6;
+}
+.gridIndex {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "article imgs imgs"
+    "article imgs imgs"
+    "footer footer footer";
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+.gridAbout {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "imgAbout articleAbout"
+    "footer footer";
+    grid-template-columns: 1.2fr 1fr;
+}
+.gridGallery {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "gallery"
+    "footer";
+}
+
+.gridContact{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "form"
+    "footer";
+}
+
+.gridServices {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "articleAbout imgServices2"
+    "imgServices1 imgServices2"
+    "footer footer" ;
+}
+
+@media screen and (max-width: 648px){
+  .gridIndex{
+    grid-template-areas: 
+    "header"
+    "article"
+    "article"
+    "imgs"
+    "footer";
+  }
+  .grid__header{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gridAbout{
+    grid-template-areas: 
+    "header"
+    "articleAbout"
+    "imgAbout"
+    "footer";
+    grid-template-columns: 1fr;
+  } 
+  .gridServices {
+    grid-template-areas: 
+    "header"
+    "imgServices1"
+    "articleAbout"
+    "imgServices2"
+    "footer";
+  }
+}
+.img__services1 {
+    grid-area: imgServices1;
+}
+.img__services2 {
+    grid-area: imgServices2;
+}
+.grid__header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+}
+.grid__footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 5px;
+}
+.logo {
+    display: flex;
+    justify-content: baseline;
+    color: #634f46;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;    
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    background-color: #1F1D36;
+    border-radius: 1px;
+}
+li {
+    border-right: 1px solid #ffffff;
+}
+li a {
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Baloo Da 2", cursive;
+  }
+li a:hover {
+    background-color: #3F3351;
+    border: 2px solid #ffffff;
+}
+.active {
+    background-color: #2666CF;
+}
+.article {
+    color:#634f46;
+    font-family:"Baloo Da 2", cursive ;
+    text-align: justify;  
+    padding: 1rem;    
+    overflow: hidden;
+    grid-area: article;
+    justify-self: end;
+    font-weight: bold;
+    line-height: 2.0;
+}
+.articleAbout{
+    color:#634f46;
+    font-family:"Baloo Da 2", cursive ;
+    padding: 3px;
+    border-radius: 5px;
+    text-align: justify;
+    font-weight: bold;
+    grid-area: articleAbout;
+    margin-right: 1rem;
+}
+
+.imgAbout{
+    display: flex;
+    justify-content: center;
+    grid-area: imgAbout;
+    border-radius: 1rem ;  
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    grid-area: imgs;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img1 {
+    border-radius: 1rem;   
+}
+.img2 {
+    border-radius: 1rem;
+}
+.gallery{
+    justify-self: end;
+    align-items: end;
+    grid-area: gallery;
+    margin: auto; 
+    width: 60%;
+    padding: 2px;   
+}
+.gallery img:hover{
+    border:3px solid #634f46;
+}
+.form{
+    grid-area: form;
+    margin: auto;
+    width: 35%;
+    background-color: #3F3351;
+    padding: 1rem;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 3px 19px -1px #000000; 
+    box-shadow: 0px 3px 19px -1px #000000;
+}
+.form__label{
+    color: #ffffff;
+    font-family:"Baloo Da 2", cursive ;
+}
+.form__text{
+    border: 1px solid #000000;
+    border-radius: 3px;
+    padding: 3px;
+    width: 75%;
+}
+select{
+    color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 3px;
+    width: 25%;
+    background-color: #1F1D36;
+}
+.form__btn{
+    color: #ffffff;
+    background-color: #1F1D36;
+    border: 1px solid #000000;
+    border-radius:3px ;
+}
