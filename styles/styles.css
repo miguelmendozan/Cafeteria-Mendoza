@@ -80,6 +80,11 @@ body {
     "imgServices2"
     "footer";
   }
+
+.form{
+    width: 70%;
+}  
+
 }
 .img__services1 {
     grid-area: imgServices1;
