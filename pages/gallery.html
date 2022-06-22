@@ -1,74 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-    <meta name="viewport"content="width-device-width,initial-scale=1.0">
-    <title>Galeria</title>
-    <link rel="stylesheet" href="../styles/styles.css"/>
-    <link rel="icon" type="image/x-icon" href="../assets/icons8-cafe-100.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport"content="width-device-width,initial-scale=1.0">
+  <title> Inicio</title>
+  <link rel="stylesheet" href="./styles/styles.css"/>
+  <link rel="icon" type="image/x-icon" href="./assets/icons8-cafe-100.png" />
+  <meta http-equiv="Expires"content="0">
+  <meta http-equiv="Last-Modified"content="0">
+  <meta http-equiv="Cache-Control"content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma"content="no-cache">
+    <!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
-<body class="gridGallery">
+<body>
 <!--Inicio del encabezado-->
-<header class="grid__header">
- <!--Logo de la pagina-->
-    <div class="grid__header swingAnimation">
-        <img src="../assets/favpng_coffee-cup-latte-cafe-watercolor-painting.png" alt="logo taza de cafe" title="Logo taza de cafe" width="100px" height="100px" />
-        <h1 class="logo">Mendoza Coffee Shop</h1>
-    </div>      
- <!--Fin del logo de la pagina-->
+<header>
  <!--Barra de navegacion-->     
-    <nav>
-      <!--Enlaces barra de navegacion-->       
-        <ul>
-            <li><a href="./../index.html">Inicio</a></li>
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a class="active" href="./gallery.html">Galeria</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li><a href="./services.html">Servicios</a></li>
+ <nav class="navbar navbar-expand-lg bg-blue sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand swingAnimation" href="../index.html"><img class="img-fluid"src="../assets/Mendoza Coffee Shop Logo - Original - 5000x5000 (1).png" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="./about.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link active" aria-current="page" href="./gallery.html">Galeria</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="./contact.html">Contacto</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="./services.html">Servicios</a>
+          </li>
         </ul>
- <!--Fin de los enlaces de la barra de navegacion-->       
-    </nav>
+      </div>
+    </div>
+  </nav>
  <!-- Fin de la barra de la navegacion-->    
 </header>
 <!-- Fin del encabezado-->
 <section>
-    <!--Imagenes-->
-    <div class="gallery">
-        <a target="_blank" href="./../assets/tomando-cafe.png">
-            <img src="./../assets/tomando-cafe.png" alt="mujer tomando cafe" title="mujer tomando cafe" height="200px"  width="275px" />
-        </a>
-        <a target="_blank" href="./../assets/A_small_cup_of_coffee.jfif">
-            <img src="./../assets/A_small_cup_of_coffee.jfif" alt="una taza de cafe" title="taza de cafe" height="200px"  width="275px"/>
-        </a>
-        <a target="_blank" href="./../assets/5414864.jpg">
-            <img src="./../assets/5414864.jpg" alt="presentaciones del cafe" title="presentaciones del cafe" height="200px"  width="275px"/>
-        </a>
-    </div>
-    <div class="gallery">
-        <a target=_blank href="./../assets/lista-prensa-gama-cafe-premium.jpg">
-            <img src="./../assets/lista-prensa-gama-cafe-premium.jpg" alt="planta de cafe" title="planta de cafe" height="200px"  width="275px"/>
-        </a>
-        <a target=_blank href="./../assets/cafenutricion-t.jpg">
-            <img src="./../assets/cafenutricion-t.jpg" alt="granos y taza de cafe" title="granos y taza de cafe" height="200px"  width="275px"/>
-        </a>
-        <a target=_blank href="./../assets/pasos-para-montar-tu-bar-o-cafeteria.jpg">
-            <img src="./../assets/pasos-para-montar-tu-bar-o-cafeteria.jpg" alt="cafeteria" title="cafeteria" height="200px"  width="275px"/>
-        </a>
-    <!--Fin imagenes-->    
+    <div id="carouselExampleCaptions" class="carousel slide mt-5 mb-5" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./../assets/pasos-para-montar-tu-bar-o-cafeteria.jpg" class="d-block w-100" alt="cafeteria">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./../assets/tomando-cafe.png" class="d-block w-100" alt="mujer tomando-cafe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./../assets/A_small_cup_of_coffee.jfif" class="d-block w-100" alt="taza de cafe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./../assets/5414864.jpg" class="d-block w-100" alt="presentaciones del cafe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fourth slide label</h5>
+              <p>Some representative placeholder content for the fourth slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./../assets/lista-prensa-gama-cafe-premium.jpg" class="d-block w-100" alt="planta de cafe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fifth slide label</h5>
+              <p>Some representative placeholder content for the fifth slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./../assets/cafenutricion-t.jpg" class="d-block w-100" alt="granos y taza de cafe">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sixth slide label</h5>
+              <p>Some representative placeholder content for the sixth slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>   
     </div>
 </section>
 <!--Inicio del footer-->
-<footer class="grid__footer">
-    <ul>
-        <li><a href="./contact.html">Contactenos</a></li>
-        <li><a href="https://www.facebook.com/ "target="_blank">Pueden seguirnos en Facebook!</a></li>
-    </ul>
-</footer>
-<!--Fin del footer--> 
+<footer class="container-fluid">
+    <div>
+      <a class="btn btn-light" href="../pages/contact.html">Contactenos <i class="bi bi-person-lines-fill"></i></a>
+      <a class="btn btn-light" href="https://www.facebook.com/" target="_blank">Pueden seguirnos en Facebook <i class="bi bi-facebook"></i></a>
+    </div>    
+  </footer>
+<!--Fin del footer-->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> 
 </body>
 </html>

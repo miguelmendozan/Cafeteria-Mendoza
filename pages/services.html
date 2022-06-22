@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"content="IE=edge">
-    <meta name="viewport"content="width-device-width,initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="stylesheet" href="../styles/styles.css"/>
-    <link rel="icon" type="image/x-icon" href="../assets/icons8-cafe-100.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport"content="width-device-width,initial-scale=1.0">
+  <title> Inicio</title>
+  <link rel="stylesheet" href="./styles/styles.css"/>
+  <link rel="icon" type="image/x-icon" href="./assets/icons8-cafe-100.png" />
+  <meta http-equiv="Expires"content="0">
+  <meta http-equiv="Last-Modified"content="0">
+  <meta http-equiv="Cache-Control"content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma"content="no-cache">
+    <!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
-<body class="gridServices">
+<body>
 <!--Inicio del encabezado-->
-<header class="grid__header">
-    <!--Logo de la pagina-->
-       <div class="grid__header swingAnimation">
-           <img src="../assets/favpng_coffee-cup-latte-cafe-watercolor-painting.png" alt="logo taza de cafe" title="Logo taza de cafe" width="100px" height="100px" />
-           <h1 class="logo">Mendoza Coffee Shop</h1>
-       </div>  
- <!--Fin del logo de la pagina-->
+<header>
  <!--Barra de navegacion-->     
-    <nav>
-      <!--Enlaces barra de navegacion-->       
-        <ul>
-            <li><a href="./../index.html">Inicio</a></li>
-            <li><a href="./about.html">Sobre nosotros</a></li>
-            <li><a href="./gallery.html">Galeria</a></li>
-            <li><a href="./contact.html">Contacto</a></li>
-            <li><a class="active" href="./services.html">Servicios</a></li>
+ <nav class="navbar navbar-expand-lg bg-blue sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand swingAnimation" href="../index.html"><img class="img-fluid"src="../assets/Mendoza Coffee Shop Logo - Original - 5000x5000 (1).png" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="./about.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="./gallery.html">Galeria</a>
+          </li>
+          <li class="nav-item border-end border-secondary border-2">
+            <a class="nav-link" href="./contact.html">Contacto</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="./services.html">Servicios</a>
+          </li>
         </ul>
- <!--Fin de los enlaces de la barra de navegacion-->       
-    </nav>
+      </div>
+    </div>
+  </nav>
  <!-- Fin de la barra de la navegacion-->    
 </header>
 <!-- Fin del encabezado-->
-<div class="img__services1">
-    <img src="../assets/process-coffee-making-using-brand-new-coffee-machine-cafe-by-expirienced-barista.jpg" alt="imagen preparando cafe" title="imagen preparando cafe"  width="600" height="300px">
-</div>
-<article>
-    <p class="articleAbout">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque,
+<article class=" container text-center mt-5 mb-3">
+    <h3>Productos</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, mollitia. Facilis, cumque,
         mollitia quos sit aspernatur ratione suscipit officiis repellendus architecto optio eum officia
         laborum cum dolore possimus perspiciatis molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Dignissimos ipsa inventore, debitis distinctio voluptatem atque tempora corrupti quod optio laborum odit,
@@ -48,19 +60,55 @@
         amet consectetur adipisicing, elit. Eligendi tenetur aperiam laudantium nobis repellat quibusdam cum debitis,
         consectetur dolorem fugit magnam veniam non saepe, reiciendis, tempora nihil quia nisi, harum? Lorem ipsum, dolor,
         sit amet consectetur adipisicing elit. Magnam cum excepturi ut ipsa veniam suscipit nostrum aut nulla voluptas,
-        blanditiis accusamus soluta temporibus laborum atque maiores amet incidunt placeat maxime.</p></p>
-
+        blanditiis accusamus soluta temporibus laborum atque maiores amet incidunt placeat maxime.</p>
 </article>
-<div class="img__services2">
-    <img src="../assets/smiling-waiter-making-cup-coffee-counter-cafe.jpg" alt="mesero sonriente" title="mesero sonriente" width="600" height="300px">
-</div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card border-dark">
+        <img src="../assets/process-coffee-making-using-brand-new-coffee-machine-cafe-by-expirienced-barista.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-dark">
+        <img src="../assets/smiling-waiter-making-cup-coffee-counter-cafe.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-dark mb-2">
+        <img src="../assets/smiling-waiter-making-cup-coffee-counter-cafe.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card border-dark  mb-2">
+        <img src="../assets/process-coffee-making-using-brand-new-coffee-machine-cafe-by-expirienced-barista.jpg" class="card-img-top img-fluid" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 <!--Inicio del footer-->
-<footer class="grid__footer">
-    <ul>
-        <li><a href="./contact.html">Contactenos</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank">Pueden seguirnos en Facebook!</a></li>
-    </ul>
-</footer>
-<!--Fin del footer-->  
+<footer class="container-fluid">
+    <div>
+      <a class="btn btn-light" href="../pages/contact.html">Contactenos <i class="bi bi-person-lines-fill"></i></a>
+      <a class="btn btn-light" href="https://www.facebook.com/" target="_blank">Pueden seguirnos en Facebook <i class="bi bi-facebook"></i></a>
+    </div>    
+  </footer>
+<!--Fin del footer-->
+ <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
 </body>
 </html>
