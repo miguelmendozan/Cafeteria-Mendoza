@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible"content="IE=edge">
   <meta name="viewport"content="width-device-width,initial-scale=1.0">
   <title> Contacto </title>
-  <link rel="stylesheet" href="../styles/styles.css"/>
+  <link rel="stylesheet" href="../styles/estilos.css"/>
   <link rel="icon" type="image/x-icon" href="../assets/icons8-cafe-100.png" />
   <meta http-equiv="Expires"content="0">
   <meta http-equiv="Last-Modified"content="0">
@@ -50,7 +50,7 @@
  <!-- Fin de la barra de la navegacion-->    
 </header>
 <!-- Fin del encabezado-->
-<section>
+<section class="m-5">
     <!--Inicio formulario de contacto-->
     <form class="row g-3">
         <div class="col-md-6">
@@ -61,11 +61,11 @@
             <label for="apellido"class="form-label" >Apellido</label>
             <input type="text" class="form-control" id="apellido" />
         </div>
-        <div class="col-12">
+        <div class="col-6">
             <label for="e-mail"class="form-label" >E-mail</label>
             <input type="email"class="form-control" id="e-mail" />
         </div> 
-        <div class="col-12">
+        <div class="col-6">
             <label for="genero" class="form-label">Genero</label>
             <select id="genero" class="form-select">
                 <option>Masculino</option>
@@ -79,11 +79,11 @@
                 <input class="form-check-input" type="checkbox" name="aceptar" />
             </div>
         </div>
-        <div>
-            <label class="input-group-text" for="comentarios">Deseamos saber tu opinion ¿Quieres dejar algun comentario?</label>
+        <div class="col-md-12">
+            <label class="input-group-text" for="comentarios">¿Quieres dejar algun comentario?</label>
             <textarea class="form-control" id="comentarios" rows="3"></textarea>
         </div>
-        <div class="col-12">
+        <div class="col-md-3 m-auto mt-3">
             <input class="btn btn-success" type="submit" value="Enviar formulario" />
             <input class="btn btn-danger" type="reset" value="Limpiar formulario" />
         </div>   
