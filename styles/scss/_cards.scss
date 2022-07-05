@@ -1,0 +1,13 @@
+$indexCards: (
+    padding:1rem,
+    background-color:$fondoCards,
+    width:25rem
+);
+.cardOneIndex {
+    padding: map-get($indexCards, padding );
+    background-color: map-get($indexCards, background-color);
+    width: map-get($indexCards, width);
+}
+.cardTwoIndex {
+    @extend .cardOneIndex
+}

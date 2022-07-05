@@ -1,0 +1,7 @@
+body {   
+    font-family:$mainFont;
+}
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
