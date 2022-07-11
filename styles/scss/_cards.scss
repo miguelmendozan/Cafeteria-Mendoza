@@ -7,7 +7,31 @@ $indexCards: (
     padding: map-get($indexCards, padding );
     background-color: map-get($indexCards, background-color);
     width: map-get($indexCards, width);
+    border-radius: 18px;
+    background: linear-gradient(45deg, #f4e5b3, #cdc196);
+    box-shadow:  5px -5px 10px #bbaf89,
+             -5px 5px 10px #fffdc5;
 }
 .cardTwoIndex {
-    @extend .cardOneIndex
+    @extend .cardOneIndex;
+}
+.cardAbout {
+    padding: map-get($indexCards, padding );
+    background-color: map-get($indexCards, background-color );
+    border-radius: 18px;
+    background: #e4d6a7;
+    box-shadow:  -5px 5px 10px #cbbe95,
+                 5px -5px 10px #fdeeb9;
+    
+}
+.cardServices {
+    background-color: map-get($indexCards, background-color );
+    padding: 2rem;   
+    border-radius: 18px;
+    background: #e4d6a7;
+    box-shadow:  -5px 5px 10px #cbbe95,
+             5px -5px 10px #fdeeb9;
+}
+.imgServices {
+    @include sizes(650px, 400px);
 }

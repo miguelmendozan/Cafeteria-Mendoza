@@ -4,3 +4,10 @@ $cafeBg:#59544B ;
 $hoverBtn:#cdcdcd;
 $fondoCards:#e4d6a7;
 $mainFont: 'McLaren', cursive;
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin font-sizes ($font-size) {
+    font-size: $font-size; 
+}
