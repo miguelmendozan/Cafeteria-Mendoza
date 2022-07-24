@@ -1,4 +1,0 @@
-En todos las Pages de mi sitio agregue el SEO con estos respectivos cambios
-Títulos: Mediante la etiqueta meta name title, agregue un título distinto a todas las páginas acorde su temática haciendo mención en ellos también el nombre del sitio.
-Palabras Clave: Mediante la etiqueta meta name keywords, agregué las siguientes palabras claves que acompañaran todas mis paginas de mi sitio: “Cafeteria, café, café gourmet, taza de café, aroma de café, coffee shop, coffee shop aesthetic, best coffee shop, coffee shop near me”.
-Descripción: Mediante la etiqueta meta name descripition agregue el siguiente párrafo que explica brevemente sobre lo que va mi sitio: “Somos una cafetería especializada en entregar calidad en cada taza para brindar la mejor experiencia a nuestros clientes, te invitamos a que ingreses a nuestra pagina si estas interesado en conocernos mas de cerca”. 
